@@ -66,7 +66,29 @@ namespace Tiq.Easy.Array.Tests
         [InlineData(new int[] { 1, 1, 1, 3, 3, 4, 3, 2, 4, 2 }, true)]
         public void ContainsDuplicateTest(int[] nums, bool expected)
         {
-            var actual = new ContainsDuplicateClass().ContainsDuplicate(nums);
+            var actual = new ContainsDuplicateSolution().ContainsDuplicate(nums);
+            Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+        [InlineData(new int[] { 2, 2, 1 }, 1)]
+        [InlineData(new int[] { 2, 3, 4, 2, 4 }, 3)]
+        [InlineData(new int[] { 4, 1, 2, 1, 2 }, 4)]
+        [InlineData(new int[] { 3, 2, 1, 2, 3 }, 1)]
+        public void SingleNumberTest(int[] nums, int expected)
+        {
+            var actual = new SingleNumberSolution().SingleNumber(nums);
+            Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+        [InlineData(new int[] { 2, 2, 1 }, 1)]
+        [InlineData(new int[] { 2, 3, 4, 2, 4 }, 3)]
+        [InlineData(new int[] { 4, 1, 2, 1, 2 }, 4)]
+        [InlineData(new int[] { 3, 2, 1, 2, 3 }, 1)]
+        public void SingleNumberDictionaryTest(int[] nums, int expected)
+        {
+            var actual = new SingleNumberSolution().SingleNumberDictionary(nums);
             Assert.Equal(expected, actual);
         }
     }

@@ -2,7 +2,7 @@
 
 namespace Tiq.Easy.Array
 {
-    public class ContainsDuplicateClass
+    public class ContainsDuplicateSolution
     {
         public bool ContainsDuplicate(int[] nums)
         {
