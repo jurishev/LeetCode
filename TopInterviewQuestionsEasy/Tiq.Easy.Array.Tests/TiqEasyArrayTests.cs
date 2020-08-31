@@ -57,5 +57,17 @@ namespace Tiq.Easy.Array.Tests
                 Assert.Equal(expected[i], nums[i]);
             }
         }
+
+        [Theory]
+        [InlineData(null, false)]
+        [InlineData(new int[] { }, false)]
+        [InlineData(new int[] { 1, 2, 3, 1 }, true)]
+        [InlineData(new int[] { 1, 2, 3, 4 }, false)]
+        [InlineData(new int[] { 1, 1, 1, 3, 3, 4, 3, 2, 4, 2 }, true)]
+        public void ContainsDuplicateTest(int[] nums, bool expected)
+        {
+            var actual = new ContainsDuplicateClass().ContainsDuplicate(nums);
+            Assert.Equal(expected, actual);
+        }
     }
 }
