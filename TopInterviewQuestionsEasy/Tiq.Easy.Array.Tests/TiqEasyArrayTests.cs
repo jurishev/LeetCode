@@ -40,5 +40,22 @@ namespace Tiq.Easy.Array.Tests
 
             Assert.Equal(expected, actual);
         }
+
+        [Theory]
+        [InlineData(new int[] { 1, 2, 3, 4, 5, 6, 7 }, 3, new int[] { 5, 6, 7, 1, 2, 3, 4 })]
+        [InlineData(new int[] { 1, 2, 3, 4 }, 6, new int[] { 3, 4, 1, 2 })]
+        [InlineData(new int[] { 1, 2 }, 1, new int[] { 2, 1 })]
+        [InlineData(new int[] { 1, 2, 3 }, 5, new int[] { 2, 3, 1 })]
+        [InlineData(new int[] { 1, 2, 3, 4, 5, 6 }, 2, new int[] { 5, 6, 1, 2, 3, 4 })]
+        public void RotateTest(int[] nums, int k, int[] expected)
+        {
+            var sln = new RotateArray();
+            sln.Rotate(nums, k);
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                Assert.Equal(expected[i], nums[i]);
+            }
+        }
     }
 }
