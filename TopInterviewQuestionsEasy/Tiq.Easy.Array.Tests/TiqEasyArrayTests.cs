@@ -190,5 +190,21 @@ namespace Tiq.Easy.Array.Tests
                 Assert.Equal(expected[i], actual[i]);
             }
         }
+
+        private readonly char[][] board = new char[9][]
+        {
+            new char[] { '5', '3', '.', '.', '7', '.', '.', '.', '.' },
+            new char[] { '6', '.', '.', '1', '9', '5', '.', '.', '.' },
+            new char[] { '.', '9', '8', '.', '.', '.', '.', '6', '.' },
+            new char[] { '8', '.', '.', '.', '6', '.', '.', '.', '3' },
+            new char[] { '4', '.', '.', '8', '.', '3', '.', '.', '1' },
+            new char[] { '7', '.', '.', '.', '2', '.', '.', '.', '6' },
+            new char[] { '.', '6', '.', '.', '.', '.', '2', '8', '.' },
+            new char[] { '.', '.', '.', '4', '1', '9', '.', '.', '5' },
+            new char[] { '.', '.', '.', '.', '8', '.', '.', '7', '9' },
+        };
+
+        [Fact]
+        public void IsValidSudokuTestTrue() => Assert.True(new ValidSudoku().IsValidSudoku(board));
     }
 }
