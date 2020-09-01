@@ -155,5 +155,23 @@ namespace Tiq.Easy.Array.Tests
                 Assert.Equal(expected[i], actual[i]);
             }
         }
+
+        [Theory]
+        [InlineData(new int[] { }, new int[] { })]
+        [InlineData(new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 })]
+        [InlineData(new int[] { 0, 1, 0, 3, 12 }, new int[] { 1, 3, 12, 0, 0 })]
+        [InlineData(new int[] { 0, 0, 0, 1 }, new int[] { 1, 0, 0, 0 })]
+        [InlineData(new int[] { 1, 2, 3 }, new int[] { 1, 2, 3 })]
+        [InlineData(new int[] { 1, 2, 0, 0 }, new int[] { 1, 2, 0, 0 })]
+        [InlineData(new int[] { -1, 0, 2, 0, -3 }, new int[] { -1, 2, -3, 0, 0 })]
+        public void MoveZeroesTest(int[] nums, int[] expected)
+        {
+            new MoveZeroesSolution().MoveZeroes(nums);
+
+            for (int i = 0; i < expected.Length; i++)
+            {
+                Assert.Equal(expected[i], nums[i]);
+            }
+        }
     }
 }
