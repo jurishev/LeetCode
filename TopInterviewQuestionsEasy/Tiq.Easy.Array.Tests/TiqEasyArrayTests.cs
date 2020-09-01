@@ -173,5 +173,22 @@ namespace Tiq.Easy.Array.Tests
                 Assert.Equal(expected[i], nums[i]);
             }
         }
+
+        [Theory]
+        [InlineData(new int[] { 3, 3 }, 6, new int[] { 0, 1 })]
+        [InlineData(new int[] { 3, 2, 4 }, 6, new int[] { 1, 2 })]
+        [InlineData(new int[] { 2, 7, 11, 15 }, 9, new int[] { 0, 1 })]
+        [InlineData(new int[] { 1, 2, 3, 4 }, 7, new int[] { 2, 3 })]
+        public void TwoSumTest(int[] nums, int target, int[] expected)
+        {
+            var actual = new TwoSumSolution().TwoSum(nums, target);
+
+            Assert.Equal(expected.Length, actual.Length);
+
+            for (int i = 0; i < expected.Length; i++)
+            {
+                Assert.Equal(expected[i], actual[i]);
+            }
+        }
     }
 }
