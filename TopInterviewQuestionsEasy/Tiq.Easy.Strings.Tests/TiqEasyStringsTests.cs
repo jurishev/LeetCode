@@ -41,5 +41,23 @@ namespace Tiq.Easy.Strings.Tests
             var actual = new FirstUniqueCharacter().FirstUniqChar(s);
             Assert.Equal(expected, actual);
         }
+
+        [Theory]
+        [InlineData("anagram", "nagaram", true)]
+        [InlineData("rat", "car", false)]
+        public void IsAnagramTest(string s, string t, bool expected)
+        {
+            var actual = new ValidAnagram().IsAnagram(s, t);
+            Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+        [InlineData("anagram", "nagaram", true)]
+        [InlineData("rat", "car", false)]
+        public void IsAnagramDictionaryTest(string s, string t, bool expected)
+        {
+            var actual = new ValidAnagram().IsAnagramDictionary(s, t);
+            Assert.Equal(expected, actual);
+        }
     }
 }
