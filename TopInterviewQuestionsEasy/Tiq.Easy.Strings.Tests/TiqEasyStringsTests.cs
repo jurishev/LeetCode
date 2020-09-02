@@ -17,5 +17,18 @@ namespace Tiq.Easy.Strings.Tests
                 Assert.Equal(expected[i], s[i]);
             }
         }
+
+        [Theory]
+        [InlineData(int.MinValue, 0)]
+        [InlineData(int.MaxValue, 0)]
+        [InlineData(123, 321)]
+        [InlineData(-123, -321)]
+        [InlineData(120, 21)]
+        [InlineData(-120, -21)]
+        public void ReverseInteger(int x, int expected)
+        {
+            var actual = new ReverseInteger().Reverse(x);
+            Assert.Equal(expected, actual);
+        }
     }
 }
