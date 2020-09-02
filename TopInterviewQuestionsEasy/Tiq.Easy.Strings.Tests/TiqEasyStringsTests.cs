@@ -25,9 +25,20 @@ namespace Tiq.Easy.Strings.Tests
         [InlineData(-123, -321)]
         [InlineData(120, 21)]
         [InlineData(-120, -21)]
-        public void ReverseInteger(int x, int expected)
+        public void ReverseIntegerTest(int x, int expected)
         {
             var actual = new ReverseInteger().Reverse(x);
+            Assert.Equal(expected, actual);
+        }
+
+        [Theory]
+        [InlineData("aabbcdefg", 4)]
+        [InlineData("aabbccdd", -1)]
+        [InlineData("leetcode", 0)]
+        [InlineData("loveleetcode", 2)]
+        public void FirstUniqCharTest(string s, int expected)
+        {
+            var actual = new FirstUniqueCharacter().FirstUniqChar(s);
             Assert.Equal(expected, actual);
         }
     }
