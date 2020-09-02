@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiq.Easy.Array", "Tiq.Easy.Array\Tiq.Easy.Array.csproj", "{3EBF6A31-90B6-40F2-B5BB-AA8F3B43A685}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiq.Easy.Array", "Tiq.Easy.Array\Tiq.Easy.Array.csproj", "{3EBF6A31-90B6-40F2-B5BB-AA8F3B43A685}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiq.Easy.Array.Tests", "Tiq.Easy.Array.Tests\Tiq.Easy.Array.Tests.csproj", "{D49E1C5E-680E-4EF5-AD79-FE704929608B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiq.Easy.Array.Tests", "Tiq.Easy.Array.Tests\Tiq.Easy.Array.Tests.csproj", "{D49E1C5E-680E-4EF5-AD79-FE704929608B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiq.Easy.Strings", "Tiq.Easy.Strings\Tiq.Easy.Strings.csproj", "{02FF56AC-21A0-4508-9B30-33A3CAFC19D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiq.Easy.Strings.Tests", "Tiq.Easy.Strings.Tests\Tiq.Easy.Strings.Tests.csproj", "{9261EFF4-112E-4978-B86B-E37592A01A61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +45,30 @@ Global
 		{D49E1C5E-680E-4EF5-AD79-FE704929608B}.Release|x64.Build.0 = Release|Any CPU
 		{D49E1C5E-680E-4EF5-AD79-FE704929608B}.Release|x86.ActiveCfg = Release|Any CPU
 		{D49E1C5E-680E-4EF5-AD79-FE704929608B}.Release|x86.Build.0 = Release|Any CPU
+		{02FF56AC-21A0-4508-9B30-33A3CAFC19D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02FF56AC-21A0-4508-9B30-33A3CAFC19D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02FF56AC-21A0-4508-9B30-33A3CAFC19D9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{02FF56AC-21A0-4508-9B30-33A3CAFC19D9}.Debug|x64.Build.0 = Debug|Any CPU
+		{02FF56AC-21A0-4508-9B30-33A3CAFC19D9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{02FF56AC-21A0-4508-9B30-33A3CAFC19D9}.Debug|x86.Build.0 = Debug|Any CPU
+		{02FF56AC-21A0-4508-9B30-33A3CAFC19D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02FF56AC-21A0-4508-9B30-33A3CAFC19D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02FF56AC-21A0-4508-9B30-33A3CAFC19D9}.Release|x64.ActiveCfg = Release|Any CPU
+		{02FF56AC-21A0-4508-9B30-33A3CAFC19D9}.Release|x64.Build.0 = Release|Any CPU
+		{02FF56AC-21A0-4508-9B30-33A3CAFC19D9}.Release|x86.ActiveCfg = Release|Any CPU
+		{02FF56AC-21A0-4508-9B30-33A3CAFC19D9}.Release|x86.Build.0 = Release|Any CPU
+		{9261EFF4-112E-4978-B86B-E37592A01A61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9261EFF4-112E-4978-B86B-E37592A01A61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9261EFF4-112E-4978-B86B-E37592A01A61}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9261EFF4-112E-4978-B86B-E37592A01A61}.Debug|x64.Build.0 = Debug|Any CPU
+		{9261EFF4-112E-4978-B86B-E37592A01A61}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9261EFF4-112E-4978-B86B-E37592A01A61}.Debug|x86.Build.0 = Debug|Any CPU
+		{9261EFF4-112E-4978-B86B-E37592A01A61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9261EFF4-112E-4978-B86B-E37592A01A61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9261EFF4-112E-4978-B86B-E37592A01A61}.Release|x64.ActiveCfg = Release|Any CPU
+		{9261EFF4-112E-4978-B86B-E37592A01A61}.Release|x64.Build.0 = Release|Any CPU
+		{9261EFF4-112E-4978-B86B-E37592A01A61}.Release|x86.ActiveCfg = Release|Any CPU
+		{9261EFF4-112E-4978-B86B-E37592A01A61}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
