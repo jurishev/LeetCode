@@ -1,4 +1,4 @@
-﻿namespace Tiq.Easy.LinkedLists.DeleteNode
+﻿namespace Tiq.Easy.LinkedLists
 {
     public class DeleteNodeSolution
     {
