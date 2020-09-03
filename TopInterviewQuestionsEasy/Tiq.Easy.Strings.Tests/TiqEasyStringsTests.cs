@@ -107,5 +107,14 @@ namespace Tiq.Easy.Strings.Tests
             var actual = new CountAndSaySolution().CountAndSay(n);
             Assert.Equal(expected, actual);
         }
+
+        [Theory]
+        [InlineData(new string[] { "flower", "flow", "flight" }, "fl")]
+        [InlineData(new string[] { "dog", "racecar", "car" }, "")]
+        public void LongestCommonPrefixTest(string[] strs, string expected)
+        {
+            var actual = new LongestCommonPrefixSolution().LongestCommonPrefix(strs);
+            Assert.Equal(expected, actual);
+        }
     }
 }
