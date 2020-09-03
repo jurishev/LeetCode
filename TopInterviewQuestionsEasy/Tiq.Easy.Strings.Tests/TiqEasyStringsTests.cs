@@ -96,5 +96,16 @@ namespace Tiq.Easy.Strings.Tests
             var actual = new ImplementStrStr().StrStr(haystack, needle);
             Assert.Equal(expected, actual);
         }
+
+        [Theory]
+        [InlineData(1, "1")]
+        [InlineData(4, "1211")]
+        [InlineData(5, "111221")]
+        [InlineData(10, "13211311123113112211")]
+        public void CountAndSayTest(int n, string expected)
+        {
+            var actual = new CountAndSaySolution().CountAndSay(n);
+            Assert.Equal(expected, actual);
+        }
     }
 }
