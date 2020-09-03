@@ -70,5 +70,22 @@ namespace Tiq.Easy.Strings.Tests
             var actual = new ValidPalindrome().IsPalindrome(s);
             Assert.Equal(expected, actual);
         }
+
+        [Theory]
+        [InlineData("42", 42)]
+        [InlineData("    -42", -42)]
+        [InlineData("  +4193 with words", 4193)]
+        [InlineData("words and 987", 0)]
+        [InlineData("-91283472332", int.MinValue)]
+        [InlineData("9867473887654", int.MaxValue)]
+        [InlineData("20000000000000000000", int.MaxValue)]
+        [InlineData("   -20000000000000000000", int.MinValue)]
+        [InlineData("  0000000000012345678", 12345678)]
+        [InlineData("2147483648", int.MaxValue)]
+        public void MyAtoiTest(string str, int expected)
+        {
+            var actual = new StringToInteger().MyAtoi(str);
+            Assert.Equal(expected, actual);
+        }
     }
 }
