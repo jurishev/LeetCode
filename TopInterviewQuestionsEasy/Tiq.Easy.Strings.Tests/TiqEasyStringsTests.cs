@@ -59,5 +59,16 @@ namespace Tiq.Easy.Strings.Tests
             var actual = new ValidAnagram().IsAnagramDictionary(s, t);
             Assert.Equal(expected, actual);
         }
+
+        [Theory]
+        [InlineData("A man, a plan, a canal: Panama", true)]
+        [InlineData("race a car", false)]
+        [InlineData("Madam, I'm Adam", true)]
+        [InlineData("T. Eliot, top bard, notes putrid tang emanating, is sad; I'd assign it a name: gnat dirt upset on drab pot toilet.", true)]
+        public void IsPalindromeTest(string s, bool expected)
+        {
+            var actual = new ValidPalindrome().IsPalindrome(s);
+            Assert.Equal(expected, actual);
+        }
     }
 }
