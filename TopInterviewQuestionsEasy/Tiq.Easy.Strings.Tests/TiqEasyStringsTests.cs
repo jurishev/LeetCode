@@ -87,5 +87,14 @@ namespace Tiq.Easy.Strings.Tests
             var actual = new StringToInteger().MyAtoi(str);
             Assert.Equal(expected, actual);
         }
+
+        [Theory]
+        [InlineData("hello", "ll", 2)]
+        [InlineData("aaaaa", "bba", -1)]
+        public void StrStrTest(string haystack, string needle, int expected)
+        {
+            var actual = new ImplementStrStr().StrStr(haystack, needle);
+            Assert.Equal(expected, actual);
+        }
     }
 }
