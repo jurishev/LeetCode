@@ -48,6 +48,22 @@ namespace Tiq.Easy.LinkedLists.Tests
             }
         }
 
+        [Theory]
+        [InlineData(new int[] { 1 }, new int[] { 1 })]
+        [InlineData(new int[] { 1, 2 }, new int[] { 2, 1 })]
+        [InlineData(new int[] { 1, 2, 3, 4, 5 }, new int[] { 5, 4, 3, 2, 1 })]
+        public void ReverseListTest(int[] values, int[] expected)
+        {
+            var head = InitializeLinkedList(values);
+            head = new ReverseLinkedList().ReverseListOnePass(head);
+
+            foreach (var val in expected)
+            {
+                Assert.Equal(val, head.val);
+                head = head.next;
+            }
+        }
+
         private ListNode InitializeLinkedList(int[] values)
         {
             var i = 0;
