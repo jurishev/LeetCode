@@ -66,6 +66,22 @@ namespace Tiq.Easy.LinkedLists.Tests
             AssertLinkedList(merged, expected);
         }
 
+        [Theory]
+        [InlineData(new int[] { 1, 3, 2, 4, 3, 2, 1 }, false)]
+        [InlineData(new int[] { 1, 2 }, false)]
+        [InlineData(new int[] { 1, 2, 1 }, true)]
+        [InlineData(new int[] { 1, 2, 3, 1 }, false)]
+        [InlineData(new int[] { 12, -9, 0, -9, 12 }, true)]
+        [InlineData(new int[] { 3, -8, 0, 2, -9, -9, 2, 0, -8, 3 }, true)]
+        public void IsPalindromeTest(int[] values, bool expected)
+        {
+            var head = InitializeLinkedList(values);
+
+            var actual = new PalindromeLinkedList().IsPalindrome(head);
+
+            Assert.Equal(expected, actual);
+        }
+
         private void AssertLinkedList(ListNode head, int[] expected)
         {
             foreach (var val in expected)
