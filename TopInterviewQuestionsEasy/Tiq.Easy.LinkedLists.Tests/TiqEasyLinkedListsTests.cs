@@ -21,13 +21,7 @@ namespace Tiq.Easy.LinkedLists.Tests
 
             new DeleteNodeSolution().DeleteNode(node);
 
-            node = head;
-
-            foreach (var val in expected)
-            {
-                Assert.Equal(val, node.val);
-                node = node.next;
-            }
+            AssertLinkedList(head, expected);
         }
 
         [Theory]
@@ -41,11 +35,7 @@ namespace Tiq.Easy.LinkedLists.Tests
             var head = InitializeLinkedList(values);
             head = new RemoveFromEnd().RemoveNthFromEnd(head, n);
 
-            foreach (var val in expected)
-            {
-                Assert.Equal(val, head.val);
-                head = head.next;
-            }
+            AssertLinkedList(head, expected);
         }
 
         [Theory]
@@ -57,6 +47,27 @@ namespace Tiq.Easy.LinkedLists.Tests
             var head = InitializeLinkedList(values);
             head = new ReverseLinkedList().ReverseListOnePass(head);
 
+            AssertLinkedList(head, expected);
+        }
+
+        [Theory]
+        [InlineData(new int[] { },new int[] { },new int[] { })]
+        [InlineData(new int[] { }, new int[] { 1, 2, 3 }, new int[] { 1, 2, 3 })]
+        [InlineData(new int[] { 3 }, new int[] { 1, 2 }, new int[] { 1, 2, 3 })]
+        [InlineData(new int[] { 2, 3 }, new int[] { 1, 4, 5 }, new int[] { 1, 2, 3, 4, 5 })]
+        [InlineData(new int[] { 1, 2, 4 }, new int[] { 1, 3, 4 }, new int[] { 1, 1, 2, 3, 4, 4 })]
+        public void MergeTwoListsTest(int[] l1, int[] l2, int[] expected)
+        {
+            var head1 = InitializeLinkedList(l1);
+            var head2 = InitializeLinkedList(l2);
+
+            var merged = new MergeSortedLists().MergeTwoLists(head1, head2);
+
+            AssertLinkedList(merged, expected);
+        }
+
+        private void AssertLinkedList(ListNode head, int[] expected)
+        {
             foreach (var val in expected)
             {
                 Assert.Equal(val, head.val);
@@ -66,6 +77,11 @@ namespace Tiq.Easy.LinkedLists.Tests
 
         private ListNode InitializeLinkedList(int[] values)
         {
+            if (values.Length == 0)
+            {
+                return null;
+            }
+
             var i = 0;
             var head = new ListNode(values[i]);
             var node = head;
