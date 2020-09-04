@@ -82,6 +82,42 @@ namespace Tiq.Easy.LinkedLists.Tests
             Assert.Equal(expected, actual);
         }
 
+        [Theory]
+        [InlineData(new int[] { }, -1, false)]
+        [InlineData(new int[] { 1 }, 0, true)]
+        [InlineData(new int[] { 3, 2, 0, -4 }, 1, true)]
+        [InlineData(new int[] { 1, 2 }, 0, true)]
+        [InlineData(new int[] { 1, 2 }, -1, false)]
+        public void HasCycleTest(int[] values, int pos, bool expected)
+        {
+            var head = InitializeLinkedList(values);
+            var end = head;
+
+            if (end != null)
+            {
+                while (end.next != null)
+                {
+                    end = end.next;
+                }
+            }
+
+            if (pos >= 0)
+            {
+                var node = head;
+                var i = 0;
+
+                while (i++ < pos)
+                {
+                    node = node.next;
+                }
+
+                end.next = node;
+            }
+
+            var actual = new LinkedListCycle().HasCycle(head);
+            Assert.Equal(expected, actual);
+        }
+
         private void AssertLinkedList(ListNode head, int[] expected)
         {
             foreach (var val in expected)
