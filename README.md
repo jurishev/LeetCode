@@ -4,3 +4,4 @@
 
 * [Array](TopInterviewQuestionsEasy/Tiq.Easy.Array)
 * [Strings](TopInterviewQuestionsEasy/Tiq.Easy.Strings)
+* [Linked List](TopInterviewQuestionsEasy/Tiq.Easy.LinkedLists)
