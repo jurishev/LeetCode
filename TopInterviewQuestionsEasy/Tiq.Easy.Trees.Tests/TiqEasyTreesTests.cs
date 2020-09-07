@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -89,6 +91,32 @@ namespace Tiq.Easy.Trees.Tests
         {
             var root = InitializeTree(new int?[] { 1, 2, 2, null, 3, null, 3 });
             Assert.False(new SymmetricTree().IsSymmetric(root));
+        }
+
+        [Fact]
+        public void LevelOrderTestCorrect()
+        {
+            var root = InitializeTree(new int?[] { 3, 9, 20, null, null, 15, 7 });
+
+            var expected = new List<List<int>>()
+            {
+                new List<int>() { 3 },
+                new List<int>() { 9, 20 },
+                new List<int>() { 15, 7 }
+            };
+
+            var actual = new LevelOrderSolution().LevelOrder(root);
+
+            for (int i = 0; i < expected.Count; i++)
+            {
+                var exp = expected[i];
+                var act = actual[i];
+
+                if (!exp.SequenceEqual(act))
+                {
+                    throw new ArgumentException();
+                }
+            }
         }
 
         private TreeNode InitializeTree(int?[] values)
