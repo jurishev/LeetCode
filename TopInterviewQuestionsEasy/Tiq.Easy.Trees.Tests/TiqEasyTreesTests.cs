@@ -56,6 +56,27 @@ namespace Tiq.Easy.Trees.Tests
             Assert.Equal(expected, actual);
         }
 
+        [Fact]
+        public void IsValidBst3False()
+        {
+            var root = InitializeTree(new int?[] { 3, 9, 20, null, null, 15, 7 });
+            Assert.False(new ValidateTree().IsValidBST(root));
+        }
+
+        [Fact]
+        public void IsValidBst4True()
+        {
+            var root = InitializeTree(new int?[] { 7, 2, 8, 1, 3, null, 9, null, null, null, 4 });
+            Assert.True(new ValidateTree().IsValidBST(root));
+        }
+
+        [Fact]
+        public void IsValidBstLeetCodeFalse()
+        {
+            var root = InitializeTree(new int?[] { 10, 5, 15, null, null, 6, 20 });
+            Assert.False(new ValidateTree().IsValidBST(root));
+        }
+
         private TreeNode InitializeTree(int?[] values)
         {
             var current = 0;
