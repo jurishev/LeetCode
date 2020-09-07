@@ -77,6 +77,20 @@ namespace Tiq.Easy.Trees.Tests
             Assert.False(new ValidateTree().IsValidBST(root));
         }
 
+        [Fact]
+        public void IsSymmetricTrue()
+        {
+            var root = InitializeTree(new int?[] { 1, 2, 2, 3, 4, 4, 3 });
+            Assert.True(new SymmetricTree().IsSymmetric(root));
+        }
+
+        [Fact]
+        public void IsSymmetricFalse()
+        {
+            var root = InitializeTree(new int?[] { 1, 2, 2, null, 3, null, 3 });
+            Assert.False(new SymmetricTree().IsSymmetric(root));
+        }
+
         private TreeNode InitializeTree(int?[] values)
         {
             var current = 0;
