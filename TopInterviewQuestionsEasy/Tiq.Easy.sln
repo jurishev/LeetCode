@@ -11,9 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiq.Easy.Strings", "Tiq.Eas
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiq.Easy.Strings.Tests", "Tiq.Easy.Strings.Tests\Tiq.Easy.Strings.Tests.csproj", "{9261EFF4-112E-4978-B86B-E37592A01A61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiq.Easy.LinkedLists", "Tiq.Easy.LinkedLists\Tiq.Easy.LinkedLists.csproj", "{5265702F-0684-40DA-86CE-9721DA1BC369}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiq.Easy.LinkedLists", "Tiq.Easy.LinkedLists\Tiq.Easy.LinkedLists.csproj", "{5265702F-0684-40DA-86CE-9721DA1BC369}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiq.Easy.LinkedLists.Tests", "Tiq.Easy.LinkedLists.Tests\Tiq.Easy.LinkedLists.Tests.csproj", "{37AF487A-5CE6-4377-8184-510F6F417D82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiq.Easy.LinkedLists.Tests", "Tiq.Easy.LinkedLists.Tests\Tiq.Easy.LinkedLists.Tests.csproj", "{37AF487A-5CE6-4377-8184-510F6F417D82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiq.Easy.Trees", "Tiq.Easy.Trees\Tiq.Easy.Trees.csproj", "{A086550B-4088-4C40-82FF-4E4C9DE3C273}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiq.Easy.Trees.Tests", "Tiq.Easy.Trees.Tests\Tiq.Easy.Trees.Tests.csproj", "{1F0A1970-8E67-47E1-B06D-0DFE13269AE7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -97,6 +101,30 @@ Global
 		{37AF487A-5CE6-4377-8184-510F6F417D82}.Release|x64.Build.0 = Release|Any CPU
 		{37AF487A-5CE6-4377-8184-510F6F417D82}.Release|x86.ActiveCfg = Release|Any CPU
 		{37AF487A-5CE6-4377-8184-510F6F417D82}.Release|x86.Build.0 = Release|Any CPU
+		{A086550B-4088-4C40-82FF-4E4C9DE3C273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A086550B-4088-4C40-82FF-4E4C9DE3C273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A086550B-4088-4C40-82FF-4E4C9DE3C273}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A086550B-4088-4C40-82FF-4E4C9DE3C273}.Debug|x64.Build.0 = Debug|Any CPU
+		{A086550B-4088-4C40-82FF-4E4C9DE3C273}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A086550B-4088-4C40-82FF-4E4C9DE3C273}.Debug|x86.Build.0 = Debug|Any CPU
+		{A086550B-4088-4C40-82FF-4E4C9DE3C273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A086550B-4088-4C40-82FF-4E4C9DE3C273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A086550B-4088-4C40-82FF-4E4C9DE3C273}.Release|x64.ActiveCfg = Release|Any CPU
+		{A086550B-4088-4C40-82FF-4E4C9DE3C273}.Release|x64.Build.0 = Release|Any CPU
+		{A086550B-4088-4C40-82FF-4E4C9DE3C273}.Release|x86.ActiveCfg = Release|Any CPU
+		{A086550B-4088-4C40-82FF-4E4C9DE3C273}.Release|x86.Build.0 = Release|Any CPU
+		{1F0A1970-8E67-47E1-B06D-0DFE13269AE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F0A1970-8E67-47E1-B06D-0DFE13269AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F0A1970-8E67-47E1-B06D-0DFE13269AE7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1F0A1970-8E67-47E1-B06D-0DFE13269AE7}.Debug|x64.Build.0 = Debug|Any CPU
+		{1F0A1970-8E67-47E1-B06D-0DFE13269AE7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1F0A1970-8E67-47E1-B06D-0DFE13269AE7}.Debug|x86.Build.0 = Debug|Any CPU
+		{1F0A1970-8E67-47E1-B06D-0DFE13269AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F0A1970-8E67-47E1-B06D-0DFE13269AE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F0A1970-8E67-47E1-B06D-0DFE13269AE7}.Release|x64.ActiveCfg = Release|Any CPU
+		{1F0A1970-8E67-47E1-B06D-0DFE13269AE7}.Release|x64.Build.0 = Release|Any CPU
+		{1F0A1970-8E67-47E1-B06D-0DFE13269AE7}.Release|x86.ActiveCfg = Release|Any CPU
+		{1F0A1970-8E67-47E1-B06D-0DFE13269AE7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
