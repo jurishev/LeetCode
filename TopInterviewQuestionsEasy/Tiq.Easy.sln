@@ -15,9 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiq.Easy.LinkedLists", "Tiq
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiq.Easy.LinkedLists.Tests", "Tiq.Easy.LinkedLists.Tests\Tiq.Easy.LinkedLists.Tests.csproj", "{37AF487A-5CE6-4377-8184-510F6F417D82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiq.Easy.Trees", "Tiq.Easy.Trees\Tiq.Easy.Trees.csproj", "{A086550B-4088-4C40-82FF-4E4C9DE3C273}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiq.Easy.Trees", "Tiq.Easy.Trees\Tiq.Easy.Trees.csproj", "{A086550B-4088-4C40-82FF-4E4C9DE3C273}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiq.Easy.Trees.Tests", "Tiq.Easy.Trees.Tests\Tiq.Easy.Trees.Tests.csproj", "{1F0A1970-8E67-47E1-B06D-0DFE13269AE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiq.Easy.Trees.Tests", "Tiq.Easy.Trees.Tests\Tiq.Easy.Trees.Tests.csproj", "{1F0A1970-8E67-47E1-B06D-0DFE13269AE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiq.Easy.SortingAndSearching", "Tiq.Easy.SortingAndSearching\Tiq.Easy.SortingAndSearching.csproj", "{06C26555-5FCC-4704-811D-496DAD532B91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiq.Easy.SortingAndSearching.Tests", "Tiq.Easy.SortingAndSearching.Tests\Tiq.Easy.SortingAndSearching.Tests.csproj", "{0D70B72A-D5EE-443F-9094-50F4B086CA7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -125,6 +129,30 @@ Global
 		{1F0A1970-8E67-47E1-B06D-0DFE13269AE7}.Release|x64.Build.0 = Release|Any CPU
 		{1F0A1970-8E67-47E1-B06D-0DFE13269AE7}.Release|x86.ActiveCfg = Release|Any CPU
 		{1F0A1970-8E67-47E1-B06D-0DFE13269AE7}.Release|x86.Build.0 = Release|Any CPU
+		{06C26555-5FCC-4704-811D-496DAD532B91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06C26555-5FCC-4704-811D-496DAD532B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06C26555-5FCC-4704-811D-496DAD532B91}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{06C26555-5FCC-4704-811D-496DAD532B91}.Debug|x64.Build.0 = Debug|Any CPU
+		{06C26555-5FCC-4704-811D-496DAD532B91}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{06C26555-5FCC-4704-811D-496DAD532B91}.Debug|x86.Build.0 = Debug|Any CPU
+		{06C26555-5FCC-4704-811D-496DAD532B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06C26555-5FCC-4704-811D-496DAD532B91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06C26555-5FCC-4704-811D-496DAD532B91}.Release|x64.ActiveCfg = Release|Any CPU
+		{06C26555-5FCC-4704-811D-496DAD532B91}.Release|x64.Build.0 = Release|Any CPU
+		{06C26555-5FCC-4704-811D-496DAD532B91}.Release|x86.ActiveCfg = Release|Any CPU
+		{06C26555-5FCC-4704-811D-496DAD532B91}.Release|x86.Build.0 = Release|Any CPU
+		{0D70B72A-D5EE-443F-9094-50F4B086CA7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D70B72A-D5EE-443F-9094-50F4B086CA7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D70B72A-D5EE-443F-9094-50F4B086CA7F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0D70B72A-D5EE-443F-9094-50F4B086CA7F}.Debug|x64.Build.0 = Debug|Any CPU
+		{0D70B72A-D5EE-443F-9094-50F4B086CA7F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0D70B72A-D5EE-443F-9094-50F4B086CA7F}.Debug|x86.Build.0 = Debug|Any CPU
+		{0D70B72A-D5EE-443F-9094-50F4B086CA7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D70B72A-D5EE-443F-9094-50F4B086CA7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D70B72A-D5EE-443F-9094-50F4B086CA7F}.Release|x64.ActiveCfg = Release|Any CPU
+		{0D70B72A-D5EE-443F-9094-50F4B086CA7F}.Release|x64.Build.0 = Release|Any CPU
+		{0D70B72A-D5EE-443F-9094-50F4B086CA7F}.Release|x86.ActiveCfg = Release|Any CPU
+		{0D70B72A-D5EE-443F-9094-50F4B086CA7F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
