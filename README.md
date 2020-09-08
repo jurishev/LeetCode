@@ -6,3 +6,4 @@
 * [Strings](TopInterviewQuestionsEasy/Tiq.Easy.Strings)
 * [Linked List](TopInterviewQuestionsEasy/Tiq.Easy.LinkedLists)
 * [Trees](TopInterviewQuestionsEasy/Tiq.Easy.Trees)
+* [Sorting and Searching](TopInterviewQuestionsEasy/Tiq.Easy.SortingAndSearching)
