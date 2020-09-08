@@ -15,5 +15,13 @@ namespace Tiq.Easy.SortingAndSearching.Tests
             new MergeSortedArray().Merge(nums1, m, nums2, n);
             Assert.True(nums1.SequenceEqual(expected));
         }
+
+        [Theory]
+        [InlineData(8, 4)]
+        public void FirstBadVersionTest(int n, int expected)
+        {
+            var actual = new FirstBadVersionSolution(expected).FirstBadVersion(n);
+            Assert.Equal(expected, actual);
+        }
     }
 }
