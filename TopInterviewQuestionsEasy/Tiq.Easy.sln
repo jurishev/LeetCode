@@ -19,9 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiq.Easy.Trees", "Tiq.Easy.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiq.Easy.Trees.Tests", "Tiq.Easy.Trees.Tests\Tiq.Easy.Trees.Tests.csproj", "{1F0A1970-8E67-47E1-B06D-0DFE13269AE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiq.Easy.SortingAndSearching", "Tiq.Easy.SortingAndSearching\Tiq.Easy.SortingAndSearching.csproj", "{06C26555-5FCC-4704-811D-496DAD532B91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiq.Easy.SortingAndSearching", "Tiq.Easy.SortingAndSearching\Tiq.Easy.SortingAndSearching.csproj", "{06C26555-5FCC-4704-811D-496DAD532B91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiq.Easy.SortingAndSearching.Tests", "Tiq.Easy.SortingAndSearching.Tests\Tiq.Easy.SortingAndSearching.Tests.csproj", "{0D70B72A-D5EE-443F-9094-50F4B086CA7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiq.Easy.SortingAndSearching.Tests", "Tiq.Easy.SortingAndSearching.Tests\Tiq.Easy.SortingAndSearching.Tests.csproj", "{0D70B72A-D5EE-443F-9094-50F4B086CA7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiq.Easy.DynamicProgramming", "Tiq.Easy.DynamicProgramming\Tiq.Easy.DynamicProgramming.csproj", "{30D99A20-C8E6-4BE7-8DD3-53D74B31B443}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +155,18 @@ Global
 		{0D70B72A-D5EE-443F-9094-50F4B086CA7F}.Release|x64.Build.0 = Release|Any CPU
 		{0D70B72A-D5EE-443F-9094-50F4B086CA7F}.Release|x86.ActiveCfg = Release|Any CPU
 		{0D70B72A-D5EE-443F-9094-50F4B086CA7F}.Release|x86.Build.0 = Release|Any CPU
+		{30D99A20-C8E6-4BE7-8DD3-53D74B31B443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30D99A20-C8E6-4BE7-8DD3-53D74B31B443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30D99A20-C8E6-4BE7-8DD3-53D74B31B443}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{30D99A20-C8E6-4BE7-8DD3-53D74B31B443}.Debug|x64.Build.0 = Debug|Any CPU
+		{30D99A20-C8E6-4BE7-8DD3-53D74B31B443}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{30D99A20-C8E6-4BE7-8DD3-53D74B31B443}.Debug|x86.Build.0 = Debug|Any CPU
+		{30D99A20-C8E6-4BE7-8DD3-53D74B31B443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30D99A20-C8E6-4BE7-8DD3-53D74B31B443}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30D99A20-C8E6-4BE7-8DD3-53D74B31B443}.Release|x64.ActiveCfg = Release|Any CPU
+		{30D99A20-C8E6-4BE7-8DD3-53D74B31B443}.Release|x64.Build.0 = Release|Any CPU
+		{30D99A20-C8E6-4BE7-8DD3-53D74B31B443}.Release|x86.ActiveCfg = Release|Any CPU
+		{30D99A20-C8E6-4BE7-8DD3-53D74B31B443}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
