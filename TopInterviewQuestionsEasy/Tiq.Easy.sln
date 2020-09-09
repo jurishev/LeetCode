@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiq.Easy.SortingAndSearchin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiq.Easy.SortingAndSearching.Tests", "Tiq.Easy.SortingAndSearching.Tests\Tiq.Easy.SortingAndSearching.Tests.csproj", "{0D70B72A-D5EE-443F-9094-50F4B086CA7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiq.Easy.DynamicProgramming", "Tiq.Easy.DynamicProgramming\Tiq.Easy.DynamicProgramming.csproj", "{30D99A20-C8E6-4BE7-8DD3-53D74B31B443}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiq.Easy.DynamicProgramming", "Tiq.Easy.DynamicProgramming\Tiq.Easy.DynamicProgramming.csproj", "{30D99A20-C8E6-4BE7-8DD3-53D74B31B443}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiq.Easy.DynamicProgramming.Tests", "Tiq.Easy.DynamicProgramming.Tests\Tiq.Easy.DynamicProgramming.Tests.csproj", "{79DC6843-D99A-49A8-BB2A-00E3ECFA95B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -167,6 +169,18 @@ Global
 		{30D99A20-C8E6-4BE7-8DD3-53D74B31B443}.Release|x64.Build.0 = Release|Any CPU
 		{30D99A20-C8E6-4BE7-8DD3-53D74B31B443}.Release|x86.ActiveCfg = Release|Any CPU
 		{30D99A20-C8E6-4BE7-8DD3-53D74B31B443}.Release|x86.Build.0 = Release|Any CPU
+		{79DC6843-D99A-49A8-BB2A-00E3ECFA95B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79DC6843-D99A-49A8-BB2A-00E3ECFA95B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79DC6843-D99A-49A8-BB2A-00E3ECFA95B7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{79DC6843-D99A-49A8-BB2A-00E3ECFA95B7}.Debug|x64.Build.0 = Debug|Any CPU
+		{79DC6843-D99A-49A8-BB2A-00E3ECFA95B7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{79DC6843-D99A-49A8-BB2A-00E3ECFA95B7}.Debug|x86.Build.0 = Debug|Any CPU
+		{79DC6843-D99A-49A8-BB2A-00E3ECFA95B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79DC6843-D99A-49A8-BB2A-00E3ECFA95B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79DC6843-D99A-49A8-BB2A-00E3ECFA95B7}.Release|x64.ActiveCfg = Release|Any CPU
+		{79DC6843-D99A-49A8-BB2A-00E3ECFA95B7}.Release|x64.Build.0 = Release|Any CPU
+		{79DC6843-D99A-49A8-BB2A-00E3ECFA95B7}.Release|x86.ActiveCfg = Release|Any CPU
+		{79DC6843-D99A-49A8-BB2A-00E3ECFA95B7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
